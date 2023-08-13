@@ -29,10 +29,7 @@
             "description": "Your Support Group without @",
             "required": false
         },
-        "STKR": {
-            "description": "Sticker for start ",
-            "required": true
-        },
+        
         "START_IMG": {
             "description": "Start Image For Bot.",
             "required": false
