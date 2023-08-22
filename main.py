@@ -27,7 +27,7 @@ STKR = os.environ.get("STKR")
 
 StartTime = time.time()
 Mukesh = Client(
-    "chat-gpt" ,
+    "chat-bot" ,
     api_id = API_ID,
     api_hash = API_HASH ,
     bot_token = BOT_TOKEN
@@ -162,7 +162,7 @@ async def cb_handler(Client, query: CallbackQuery):
         await query.message.edit_text(SOURCE_TEXT, reply_markup=SOURCE_BUTTONS)
     elif query.data == 'hurr':
         await query.answer()
-        await query.message.reply(SOURCE)
+        await query.message.edit_text(SOURCE)
 @Mukesh.on_message(filters.command(["help", f"help@{BOT_USERNAME}"], prefixes=["","+", ".", "/", "-", "?", "$"]))
 async def restart(client, message):
     hmm = await message.reply_photo(START_IMG,
