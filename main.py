@@ -22,7 +22,7 @@ SUPPORT_GRP = os.environ.get("SUPPORT_GRP","the_support_chat")
 BOT_NAME = os.environ.get("BOT_NAME","CHATBOT")
 START_IMG = os.environ.get("START_IMG","")
 
-STKR = os.environ.get("STKR")
+STKR = os.environ.get("STKR","")
 
 
 StartTime = time.time()
