@@ -29,6 +29,10 @@
             "description": "Your Support Group without @",
             "required": false
         },
+        "STKR":{
+            "description":"fill stickers id here",
+            "required":true
+        },
         
         "START_IMG": {
             "description": "Start Image For Bot.",
